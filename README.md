@@ -97,6 +97,8 @@ This script was created mainly because of the [discussion](https://twitter.com/f
 
 - **DONE**
 
+Check "React Prototyping Playground" gist - https://gist.github.com/voronianski/f67f4973687434f474b4
+
 ## To Do
 
 What will be nice to add is extending transformations with options in script's querystring like:
