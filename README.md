@@ -99,7 +99,7 @@ This script was created mainly because of the [discussion](https://twitter.com/f
 
 ## To Do
 
-What will be nice to add is extending transformations with options in scripts querystring like:
+What will be nice to add is extending transformations with options in script's querystring like:
 
 ```
 /path/to/btib.min.js?presets[]=stage-0&plugins[]=transform-runtime
