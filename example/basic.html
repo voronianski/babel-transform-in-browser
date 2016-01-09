@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Transform ES2015 in browser with Babel.js</title>
+</head>
+<body>
+
+<!-- include options as query parameters -->
+<script src="../dist/btib.js?presets[]=stage-0"></script>
+
+<!-- example with arrow functions -->
+<script type="text/es2015">
+const multiplier = (x) => (y) => x * y;
+const double = multiplier(2);
+const result = double(3);
+console.log(result);
+</script>
+
+<!-- example with classes -->
+<script type="text/es2015">
+class Cat {
+    constructor(name) {
+        this.name = name;
+    }
+    speak() {
+        console.log(this.name + ' makes a noise.');
+    }
+}
+
+class Lion extends Cat {
+    speak() {
+        super.speak();
+        console.log(this.name + ' roars.');
+    }
+}
+
+let cat = new Cat('Simon');
+cat.speak();
+
+let lion = new Lion('Sam');
+lion.speak();
+</script>
+
+<!-- experimental features like async functions etc. -->
+<!-- <script type="text/es2015">
+function someAPICallMock () {
+    return new Promise(resolve => {
+        setTimeout(() => resolve('Success'), 500);
+    });
+}
+async function asyncFunc () {
+    const value = await someAPICallMock();
+    console.log(value);
+}
+asyncFunc();
+</script> -->
+</body>
+</html>

@@ -16,7 +16,7 @@ The answer is _quick prototyping_.
 
 ## Usage
 
-Just include the script on the page before your ES2015 scripts. Please note that only scripts that will have `type="text/es2015"` will be transpiled, example: 
+Just include the script on the page before or after your ES2015 scripts. Please note that only scripts that will have `type="text/es2015"` will be transpiled, see example: 
 
 ```html
 <!doctype html>
@@ -27,7 +27,7 @@ Just include the script on the page before your ES2015 scripts. Please note that
 </head>
 <body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/dist/btib.min.js"></script>
 <script type="text/es2015">
 const multiplier = (x) => (y) => x * y;
 const double = multiplier(2);
@@ -69,6 +69,13 @@ lion.speak();
 ### [@Vjeux](https://twitter.com/Vjeux)'s Challenge
 
 http://blog.vjeux.com/2015/javascript/challenge-best-javascript-setup-for-quick-prototyping.html
+
+> - No setup: I'm happy to have to setup something initially (dedicated server, apache, php...) but nothing should be required to create a new project. No npm install, react-native init, creating a github project, yo webapp...
+> - One file: I want to write a single js file to start with. No package.json, no .babelrc, no Procfile...
+> - Sharable: I want to be able to share it with a url without any extra step. No git push heroku master or git push gh-pages.
+> - Keeps working: Once online, it should stay there and keep working 6 months later. No npm start to run it, no special port that's going to conflict with my 10 other prototypes...
+> - Not generic: I don't care about it being generic, I will use whatever transforms you decided. Happy to write js without semi-colons and using SASS for my CSS if you checked all the boxes above.
+> - Not prod-ready: This setup doesn't have to be prod-ready, support unit testing or anything that involves it being a real product. This is meant for hacking on stuff. When the project becomes good, I'll spend the time to add all the proper boilerplate.
 
 My suggest:
 
