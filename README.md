@@ -1,11 +1,14 @@
 # Babel Transform In Browser
 
+[![npm version](http://badge.fury.io/js/babel-transform-in-browser.svg)](http://badge.fury.io/js/babel-transform-in-browser)
+[![Dependency Status](http://david-dm.org/voronianski/babel-transform-in-browser.svg)](http://david-dm.org/voronianski/babel-transform-in-browser)
+
 > Transform ES2015 code in browser on the fly with [Babel.js](https://babeljs.io).
 
-## CDN
+### Download
 
 ```
-https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js
+https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/dist/btib.min.js
 ```
 
 ## Why?
@@ -16,7 +19,7 @@ The answer is _quick prototyping_.
 
 ## Usage
 
-Just include the script on the page before or after your ES2015 scripts. Please note that only scripts that will have `type="text/es2015"` will be transpiled, see example: 
+Just include the script on the page before or after your ES2015 scripts. Please note that only scripts that have `type="text/es2015"` attribute will be transpiled, see example: 
 
 ```html
 <!doctype html>
@@ -66,17 +69,31 @@ lion.speak();
 
 ## References
 
-### [@Vjeux](https://twitter.com/Vjeux)'s Challenge
-
-http://blog.vjeux.com/2015/javascript/challenge-best-javascript-setup-for-quick-prototyping.html
+This script was created mainly because of the [discussion](https://twitter.com/floydophone/status/680226147213426688) on how hard it is to start hacking on a js project today. Also it is a response to the **[@Vjeux](https://twitter.com/Vjeux)'s challenge (http://blog.vjeux.com/2015/javascript/challenge-best-javascript-setup-for-quick-prototyping.html)**:
 
 > - No setup: I'm happy to have to setup something initially (dedicated server, apache, php...) but nothing should be required to create a new project. No npm install, react-native init, creating a github project, yo webapp...
+
+- **DONE** You can use any server you want to serve static html file.
+ 
 > - One file: I want to write a single js file to start with. No package.json, no .babelrc, no Procfile...
+
+- **DONE** But let's do this in html file instead.
+
 > - Sharable: I want to be able to share it with a url without any extra step. No git push heroku master or git push gh-pages.
+
+- **DONE**
+
 > - Keeps working: Once online, it should stay there and keep working 6 months later. No npm start to run it, no special port that's going to conflict with my 10 other prototypes...
+
+- **DONE**
+
 > - Not generic: I don't care about it being generic, I will use whatever transforms you decided. Happy to write js without semi-colons and using SASS for my CSS if you checked all the boxes above.
+
+- **DONE** Though SASS/LESS is not included it's a question about next "transform-in-browser" script.
+
 > - Not prod-ready: This setup doesn't have to be prod-ready, support unit testing or anything that involves it being a real product. This is meant for hacking on stuff. When the project becomes good, I'll spend the time to add all the proper boilerplate.
 
-My suggest:
+- **DONE**
 
-> Your challenge is about to introduce one more level of complexity / tool that newbies will need to learn. What is the problem with a http://fooo.fr/~vjeux/ and uploading there test-something.html? The starter html to copy and paste can look like - 
+--- 
+**MIT License**
