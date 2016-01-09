@@ -1,6 +1,14 @@
-import Babel from 'babel-standalone';
+import * as Babel from 'babel-standalone';
 
-console.log('hello 2');
+function init () {
+    const scriptNodes = document.querySelectorAll('script[type="text/es2015"]');
+    const input = [...scriptNodes].reduce((memo, content) => {
+        return memo.concat(';', content.innerHTML);
+    }, '');
+    const options = { presets: ['es2015'] };
+    const output = Babel.transform(input, options).code;
+    const execFn = new Function(output);
+    execFn();
+}
 
-// TBD
-// const scripts = document.querySelectorAll('[type="text/es2015"]');
+document.addEventListener('DOMContentLoaded', init, false);

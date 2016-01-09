@@ -16,7 +16,7 @@ The answer is _quick prototyping_.
 
 ## Usage
 
-Just include the script on the page before your ES2015 scripts. Please note that only _scripts that will have `type="text/es2015"` will be transpiled_, example: 
+Just include the script on the page before your ES2015 scripts. Please note that only scripts that will have `type="text/es2015"` will be transpiled, example: 
 
 ```html
 <!doctype html>
@@ -27,39 +27,39 @@ Just include the script on the page before your ES2015 scripts. Please note that
 </head>
 <body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js"></script>
-    <script type="text/es2015">
-    const multiplier = (x) => (y) => x * y;
-    const square = multiplier(2);
-    const result = square(3);
-    console.log(result); 
-    // 9
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js"></script>
+<script type="text/es2015">
+const multiplier = (x) => (y) => x * y;
+const double = multiplier(2);
+const result = double(3);
+console.log(result); 
+// 9
 
-    class Cat { 
-        constructor(name) {
-            this.name = name;
-        }
-        speak() {
-            console.log(this.name + ' makes a noise.');
-        }
+class Cat { 
+    constructor(name) {
+        this.name = name;
     }
-
-    class Lion extends Cat {
-        speak() {
-            super.speak();
-            console.log(this.name + ' roars.');
-        }
+    speak() {
+        console.log(this.name + ' makes a noise.');
     }
+}
 
-    let cat = new Cat('Simon');
-    cat.speak(); 
-    // Simon makes a noise.
+class Lion extends Cat {
+    speak() {
+        super.speak();
+        console.log(this.name + ' roars.');
+    }
+}
 
-    let lion = new Lion('Sam');
-    lion.speak(); 
-    // Sam makes a noise. 
-    // Sam roars.
-    </script>
+let cat = new Cat('Simon');
+cat.speak();
+// Simon makes a noise.
+
+let lion = new Lion('Sam');
+lion.speak();
+// Sam makes a noise. 
+// Sam roars.
+</script>
 </body>
 </html>
 ```
