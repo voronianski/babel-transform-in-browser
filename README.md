@@ -11,6 +11,8 @@
 https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/dist/btib.min.js
 ```
 
+Or check [dist](https://github.com/voronianski/babel-transform-in-browser/tree/master/dist) folder.
+
 ## Why?
 
 The answer is _quick prototyping_.
@@ -94,6 +96,16 @@ This script was created mainly because of the [discussion](https://twitter.com/f
 > - Not prod-ready: This setup doesn't have to be prod-ready, support unit testing or anything that involves it being a real product. This is meant for hacking on stuff. When the project becomes good, I'll spend the time to add all the proper boilerplate.
 
 - **DONE**
+
+## To Do
+
+What will be nice to add is extending transformations with options in scripts querystring like:
+
+```
+/path/to/btib.min.js?presets[]=stage-0&plugins[]=transform-runtime
+```
+
+For now it's not added because of bug in [babel-standalone](https://github.com/Daniel15/babel-standalone) module - https://github.com/Daniel15/babel-standalone/issues/4.
 
 --- 
 **MIT License**
