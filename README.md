@@ -97,7 +97,7 @@ This script was created mainly because of the [discussion](https://twitter.com/f
 
 - **DONE**
 
-Check "React Prototyping Playground" gist - https://gist.github.com/voronianski/f67f4973687434f474b4
+Check _"React Prototyping Playground"_ gist - https://gist.github.com/voronianski/f67f4973687434f474b4
 
 ## To Do
 
