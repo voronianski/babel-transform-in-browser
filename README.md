@@ -108,4 +108,4 @@ What will be nice to add is extending transformations with options in script's q
 For now it's not added because of bug in [babel-standalone](https://github.com/Daniel15/babel-standalone) module - https://github.com/Daniel15/babel-standalone/issues/4.
 
 --- 
-**MIT License**
+**MIT Licensed**
