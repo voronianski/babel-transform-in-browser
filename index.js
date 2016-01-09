@@ -1,4 +1,12 @@
 import * as Babel from 'babel-standalone';
+import qs from 'querystring';
+
+if (!document.currentScript) { // doesn't work in ie
+    require('currentscript');
+}
+const src = document.currentScript.src
+const query = qs.parse(src.slice(src.indexOf('?') + 1));
+console.log(query);
 
 function init () {
     const scriptNodes = document.querySelectorAll('script[type="text/es2015"]');
