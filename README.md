@@ -1,55 +1,65 @@
 # Babel Transform In Browser
 
-> Transform ES2015 code in browser on the fly.
+> Transform ES2015 code in browser on the fly with [Babel.js](https://babeljs.io).
+
+## CDN
+
+```
+https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js
+```
 
 ## Why?
 
 The answer is _quick prototyping_.
 
-**IMPORTANT NOTE: Please never use this in real projects and production.**
+**IMPORTANT NOTE: Please never use this module in real projects and production environments.**
 
-## Example
+## Usage
+
+Just include the script on the page before your ES2015 scripts. Please note that only _scripts that will have `type="text/es2015"` will be transpiled_, example: 
 
 ```html
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>React Quick Prototyping</title>
+    <meta charset="utf-8">
+    <title>Quick ES2015 Prototyping</title>
 </head>
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js?presets=stage-0"></script>
-  <script type="text/es2015">
-  const multiplier = (x) => (y) => x * y;
-  const square = multiplier(2);
-  const result = square(3);
-  console.log(result); // 9
 
-  class Cat { 
-    constructor(name) {
-        this.name = name;
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js"></script>
+    <script type="text/es2015">
+    const multiplier = (x) => (y) => x * y;
+    const square = multiplier(2);
+    const result = square(3);
+    console.log(result); 
+    // 9
+
+    class Cat { 
+        constructor(name) {
+            this.name = name;
+        }
+        speak() {
+            console.log(this.name + ' makes a noise.');
+        }
     }
 
-    speak() {
-        console.log(this.name + ' makes a noise.');
+    class Lion extends Cat {
+        speak() {
+            super.speak();
+            console.log(this.name + ' roars.');
+        }
     }
-  }
 
-  class Lion extends Cat {
-    speak() {
-        super.speak();
-        console.log(this.name + ' roars.');
-    }
-  }
+    let cat = new Cat('Simon');
+    cat.speak(); 
+    // Simon makes a noise.
 
-  let cat = new Cat('Simon');
-  cat.speak(); // Simon makes a noise.
-
-  let lion = new Lion('Sam');
-  lion.speak(); 
-  // Sam makes a noise. 
-  // Sam roars.
-  </script>
+    let lion = new Lion('Sam');
+    lion.speak(); 
+    // Sam makes a noise. 
+    // Sam roars.
+    </script>
 </body>
 </html>
 ```
