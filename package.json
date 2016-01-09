@@ -1,0 +1,33 @@
+{
+  "name": "babel-transform-in-browser",
+  "version": "0.1.0",
+  "description": "Transform ES2015 code in browser on the fly with Babel.js",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "babel-standalone": "^1.0.0",
+    "babelify": "^7.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voronianski/babel-transform-in-browser.git"
+  },
+  "keywords": [
+    "babel",
+    "transform",
+    "browser"
+  ],
+  "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voronianski/babel-transform-in-browser/issues"
+  },
+  "homepage": "https://github.com/voronianski/babel-transform-in-browser#readme"
+}
