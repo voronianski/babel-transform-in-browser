@@ -7,11 +7,13 @@
 
 ### Download
 
+After PR accept - https://github.com/cdnjs/cdnjs/pull/6677 will be available through:
+
 ```
-https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/dist/btib.min.js
+https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js
 ```
 
-Or check [dist](https://github.com/voronianski/babel-transform-in-browser/tree/master/dist) folder.
+Or check sources at [dist](https://github.com/voronianski/babel-transform-in-browser/tree/master/dist) folder.
 
 ## Why?
 
@@ -32,7 +34,7 @@ Just include the script on the page before or after your ES2015 scripts. Please 
 </head>
 <body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/dist/btib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js"></script>
 <script type="text/es2015">
 const multiplier = (x) => (y) => x * y;
 const double = multiplier(2);
