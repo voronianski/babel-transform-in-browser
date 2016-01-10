@@ -99,7 +99,38 @@ This script was created mainly because of the [discussion](https://twitter.com/f
 
 - **DONE**
 
-Check _"React Prototyping Playground"_ gist - https://gist.github.com/voronianski/f67f4973687434f474b4
+Check the example, it's also availbe as _"React Prototyping Playground"_ gist - https://gist.github.com/voronianski/f67f4973687434f474b4:
+
+```html
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>React Quick Prototyping</title>
+</head>
+<body>
+    <div id="root"></div>
+  
+    <script src="https://fb.me/react-0.14.6.min.js"></script>
+    <script src="https://fb.me/react-dom-0.14.6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js"></script>
+    <script type="text/es2015">
+        // YOUR PLAYGROUND CODE GOES HERE
+        // EXAMPLE:
+        function App ({ title }) {
+            return (
+                <div>{title}</div>
+            );
+        }
+
+        ReactDOM.render(
+            <App title="Hello World" />,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+</html>
+```
 
 ## To Do
 
