@@ -13,7 +13,7 @@ After PR accept - https://github.com/cdnjs/cdnjs/pull/6677 will be available thr
 https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js
 ```
 
-Or check sources at [dist](https://github.com/voronianski/babel-transform-in-browser/tree/master/dist) folder.
+For now check sources at [dist](https://github.com/voronianski/babel-transform-in-browser/tree/master/dist) folder.
 
 ## Why?
 
