@@ -85,11 +85,11 @@ This script was created mainly because of the [discussion](https://twitter.com/f
 
 > - Sharable: I want to be able to share it with a url without any extra step. No git push heroku master or git push gh-pages.
 
-- **DONE**
+- **DONE** Send a file in message, copy-paste in pastebin, upload via ftp, etc.
 
 > - Keeps working: Once online, it should stay there and keep working 6 months later. No npm start to run it, no special port that's going to conflict with my 10 other prototypes...
 
-- **DONE**
+- **DONE** Bulletproof html file with script inside helps here again.
 
 > - Not generic: I don't care about it being generic, I will use whatever transforms you decided. Happy to write js without semi-colons and using SASS for my CSS if you checked all the boxes above.
 
@@ -97,7 +97,7 @@ This script was created mainly because of the [discussion](https://twitter.com/f
 
 > - Not prod-ready: This setup doesn't have to be prod-ready, support unit testing or anything that involves it being a real product. This is meant for hacking on stuff. When the project becomes good, I'll spend the time to add all the proper boilerplate.
 
-- **DONE**
+- **DONE** Absolutely.
 
 Check the example below, it's also availbe as _"React Prototyping Playground"_ gist - https://gist.github.com/voronianski/f67f4973687434f474b4:
 
