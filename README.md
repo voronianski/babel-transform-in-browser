@@ -99,7 +99,7 @@ This script was created mainly because of the [discussion](https://twitter.com/f
 
 - **DONE**
 
-Check the example, it's also availbe as _"React Prototyping Playground"_ gist - https://gist.github.com/voronianski/f67f4973687434f474b4:
+Check the example below, it's also availbe as _"React Prototyping Playground"_ gist - https://gist.github.com/voronianski/f67f4973687434f474b4:
 
 ```html
 <!doctype html>
