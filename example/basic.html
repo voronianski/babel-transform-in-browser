@@ -7,7 +7,7 @@
 <body>
 
 <!-- include options as query parameters -->
-<script src="../dist/btib.js?presets[]=stage-0"></script>
+<script src="../dist/btib.js"></script>
 
 <!-- example with arrow functions -->
 <script type="text/es2015">
@@ -41,19 +41,5 @@ cat.speak();
 let lion = new Lion('Sam');
 lion.speak();
 </script>
-
-<!-- experimental features like async functions etc. -->
-<!-- <script type="text/es2015">
-function someAPICallMock () {
-    return new Promise(resolve => {
-        setTimeout(() => resolve('Success'), 500);
-    });
-}
-async function asyncFunc () {
-    const value = await someAPICallMock();
-    console.log(value);
-}
-asyncFunc();
-</script> -->
 </body>
 </html>
