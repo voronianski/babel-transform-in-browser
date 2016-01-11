@@ -73,7 +73,41 @@ lion.speak();
 
 ## References
 
-This script was created mainly because of the [discussion](https://twitter.com/floydophone/status/680226147213426688) on how hard it is to start hacking on a js project today. Also it is a response to the **[@Vjeux](https://twitter.com/Vjeux)'s challenge (http://blog.vjeux.com/2015/javascript/challenge-best-javascript-setup-for-quick-prototyping.html)**:
+### Quick React Prototyping
+
+This script was created mainly because of the [discussion](https://twitter.com/floydophone/status/680226147213426688) on how hard it is to start hacking on a js project today. Also it is a response to the **[@Vjeux](https://twitter.com/Vjeux)'s challenge (http://blog.vjeux.com/2015/javascript/challenge-best-javascript-setup-for-quick-prototyping.html)**.
+
+Check the [example](https://github.com/voronianski/babel-transform-in-browser/tree/master/example/react.html) below (it's also availbe as _"React Prototyping Playground"_ gist - https://gist.github.com/voronianski/f67f4973687434f474b4):
+
+```html
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>React Quick Prototyping</title>
+</head>
+<body>
+    <div id="root"></div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js"></script>
+    <script type="text/es2015">
+        // Your playground code goes here, e.g.:
+        function App ({ title }) {
+            return (
+                <div>{title}</div>
+            );
+        }
+
+        ReactDOM.render(
+            <App title="Hello World" />,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+</html>
+```
 
 > - No setup: I'm happy to have to setup something initially (dedicated server, apache, php...) but nothing should be required to create a new project. No npm install, react-native init, creating a github project, yo webapp...
 
@@ -98,39 +132,6 @@ This script was created mainly because of the [discussion](https://twitter.com/f
 > - Not prod-ready: This setup doesn't have to be prod-ready, support unit testing or anything that involves it being a real product. This is meant for hacking on stuff. When the project becomes good, I'll spend the time to add all the proper boilerplate.
 
 - **DONE** Absolutely.
-
-Check the example below, it's also availbe as _"React Prototyping Playground"_ gist - https://gist.github.com/voronianski/f67f4973687434f474b4:
-
-```html
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>React Quick Prototyping</title>
-</head>
-<body>
-    <div id="root"></div>
-  
-    <script src="https://fb.me/react-0.14.6.min.js"></script>
-    <script src="https://fb.me/react-dom-0.14.6.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js"></script>
-    <script type="text/es2015">
-        // YOUR PLAYGROUND CODE GOES HERE
-        // EXAMPLE:
-        function App ({ title }) {
-            return (
-                <div>{title}</div>
-            );
-        }
-
-        ReactDOM.render(
-            <App title="Hello World" />,
-            document.getElementById('root')
-        );
-    </script>
-</body>
-</html>
-```
 
 ## To Do
 
