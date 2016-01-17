@@ -8,7 +8,7 @@
 ### Download
 
 ```
-http://labs.voronianski.com/babel-transform-in-browser/btib.min.js
+http://labs.voronianski.com/babel-transform-in-browser/0.1.0/btib.min.js
 ```
 
 But after PR accept - https://github.com/cdnjs/cdnjs/pull/6677 will be available through CDN:
