@@ -7,13 +7,17 @@
 
 ### Download
 
-After PR accept - https://github.com/cdnjs/cdnjs/pull/6677 will be available through:
+```
+http://labs.voronianski.com/babel-transform-in-browser/btib.min.js
+```
+
+But after PR accept - https://github.com/cdnjs/cdnjs/pull/6677 will be available through CDN:
 
 ```
 https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/0.1.0/btib.min.js
 ```
 
-For now check sources at [dist](https://github.com/voronianski/babel-transform-in-browser/tree/master/dist) folder.
+Also check sources at [dist](https://github.com/voronianski/babel-transform-in-browser/tree/master/dist) folder.
 
 ## Why?
 
