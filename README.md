@@ -44,7 +44,7 @@ const multiplier = (x) => (y) => x * y;
 const double = multiplier(2);
 const result = double(3);
 console.log(result); 
-// 9
+// 6
 
 class Cat { 
     constructor(name) {
