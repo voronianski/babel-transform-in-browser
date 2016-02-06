@@ -1,6 +1,6 @@
 {
   "name": "babel-transform-in-browser",
-  "version": "6.4.4",
+  "version": "6.4.5",
   "description": "Transform ES2015 code in browser on the fly with Babel.js",
   "main": "index.js",
   "directories": {
