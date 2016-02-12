@@ -11,10 +11,10 @@
 http://labs.voronianski.com/babel-transform-in-browser/6.4.5/btib.min.js
 ```
 
-But after PR accept - https://github.com/cdnjs/cdnjs/pull/6677 will be available through CDN:
+or
 
 ```
-https://cdnjs.cloudflare.com/ajax/libs/babel-transform-in-browser/6.4.5/btib.min.js
+https://npmcdn.com/babel-transform-in-browser@6.4.5/dist/btib.min.js
 ```
 
 Also check sources at [dist](https://github.com/voronianski/babel-transform-in-browser/tree/master/dist) folder.
