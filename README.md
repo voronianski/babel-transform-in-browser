@@ -8,13 +8,7 @@
 ### Download
 
 ```
-http://labs.voronianski.com/babel-transform-in-browser/6.4.5/btib.min.js
-```
-
-or
-
-```
-https://npmcdn.com/babel-transform-in-browser@6.4.5/dist/btib.min.js
+https://npmcdn.com/babel-transform-in-browser@6.4.6/dist/btib.min.js
 ```
 
 Also check sources at [dist](https://github.com/voronianski/babel-transform-in-browser/tree/master/dist) folder.
@@ -38,7 +32,7 @@ Just include the script on the page before or after your ES2015 scripts. Please 
 </head>
 <body>
 
-<script src="http://labs.voronianski.com/babel-transform-in-browser/6.4.5/btib.min.js"></script>
+<script src="https://npmcdn.com/babel-transform-in-browser@6.4.6/dist/btib.min.js"></script>
 <script type="text/es2015">
 const multiplier = (x) => (y) => x * y;
 const double = multiplier(2);
@@ -95,7 +89,7 @@ Check the [example](https://github.com/voronianski/babel-transform-in-browser/tr
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.min.js"></script>
-    <script src="http://labs.voronianski.com/babel-transform-in-browser/6.4.5/btib.min.js"></script>
+    <script src="https://npmcdn.com/babel-transform-in-browser@6.4.6/dist/btib.min.js"></script>
     <script type="text/es2015">
         // Your playground code goes here, e.g.:
         function App ({ title }) {
@@ -136,16 +130,6 @@ Check the [example](https://github.com/voronianski/babel-transform-in-browser/tr
 > - Not prod-ready: This setup doesn't have to be prod-ready, support unit testing or anything that involves it being a real product. This is meant for hacking on stuff. When the project becomes good, I'll spend the time to add all the proper boilerplate.
 
 - **DONE** Absolutely.
-
-## To Do
-
-What will be nice to add is extending transformations with options in script's querystring like:
-
-```
-/path/to/btib.min.js?presets[]=stage-0&plugins[]=transform-runtime
-```
-
-For now it's not added because of bug in [babel-standalone](https://github.com/Daniel15/babel-standalone) module - https://github.com/Daniel15/babel-standalone/issues/4.
 
 --- 
 **MIT Licensed**
