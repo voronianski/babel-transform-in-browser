@@ -1,14 +1,13 @@
 {
   "name": "babel-transform-in-browser",
-  "version": "6.4.5",
+  "version": "6.4.6",
   "description": "Transform ES2015 code in browser on the fly with Babel.js",
   "main": "index.js",
   "directories": {
     "example": "example"
   },
   "dependencies": {
-    "babel-standalone": "^6.4.4",
-    "currentscript": "^1.1.0"
+    "babel-standalone": "^6.4.4"
   },
   "devDependencies": {
     "babel-cli": "^6.4.0",

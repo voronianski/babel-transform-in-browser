@@ -6,9 +6,6 @@ function init () {
         return memo.concat(';', content.innerHTML);
     }, '');
 
-    // TBD: add support of options as query params
-    // after issue with plugins will be solved
-    // https://github.com/Daniel15/babel-standalone/issues/4
     const options = {
         presets: [
             'es2015',
@@ -16,8 +13,7 @@ function init () {
             'stage-0'
         ],
         plugins: [
-            'transform-object-assign',
-            'transform-runtime'
+            'transform-object-assign'
         ]
     };
     const output = Babel.transform(input, options).code;
